@@ -26,6 +26,9 @@ namespace AppStoreScraperModels.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+                    b.Property<DateTime>("DateLoaded")
+                        .HasColumnType("timestamp without time zone");
+
                     b.Property<int>("score")
                         .HasColumnType("integer");
 

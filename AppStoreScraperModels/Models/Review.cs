@@ -1,3 +1,5 @@
+using System;
+
 namespace AppStoreScraperModels
 {
     public class Review
@@ -10,6 +12,7 @@ namespace AppStoreScraperModels
         public string title { get; set; }
         public string text { get; set; }
         public string url { get; set; }
+        public DateTime DateLoaded { get; set; }
     }
 }
 
